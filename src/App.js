@@ -10,7 +10,7 @@ export default class App extends Component {
       <View style={Styles.container}>
         <Text style={Styles.f48}>App!</Text>
         <Simples mgs="Bem-vindo ao meu app" />
-        <ParImpar numero="3" />
+        <ParImpar numero="4" />
       </View>
     
     )

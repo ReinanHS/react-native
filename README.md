@@ -11,4 +11,4 @@ emulator -no-snapshot -avd Pixel_2_API_29
 
 Renderização Condicional
 
-- Função que retorna todos os elementos filhos: childrem
+- Função que retorna todos os elementos filhos: children
