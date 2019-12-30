@@ -1,32 +1,27 @@
-import React, { Component } from 'react'
-import { View, Text, StyleSheet } from 'react-native'
-import Simples from './components/simples'
-import ParImpar from './components/ParImpar'
-import { Inverter, MegaSena } from './components/Mult'
+import React from 'react'
+import { View, StyleSheet } from 'react-native'
 
-export default class App extends Component {
-  render(){
-    return (
-      
-      <View style={Styles.container}>
-        <Text style={Styles.f48}>App!</Text>
-        <Simples mgs="Bem-vindo ao meu app" />
-        <Inverter texto="Bem-vindo ao meu app" />
-        <ParImpar numero="4" />
-        <MegaSena />
-      </View>
-    
-    )
-  }
+import Simples from './componentes/Simples'
+import ParImpar from './componentes/ParImpar'
+import Inverter, { MegaSena } from './componentes/Multi'
+
+export default class App extends React.Component {
+	render() {
+		return (
+			<View style={styles.container}>
+				<Simples texto='Flexível!!!!' />
+				<ParImpar numero={27} />
+				<Inverter texto='React Nativo!' />
+				<MegaSena numeros={9} />
+			</View>
+		)
+	}
 }
 
-const Styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  f48: {
-    fontSize: 48,
-  }
+const styles = StyleSheet.create({
+	container: {
+		flex: 1,
+		justifyContent: 'center',
+		alignItems: 'center',
+	}
 })
