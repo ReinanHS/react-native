@@ -1,7 +1,7 @@
 export default props => {
-    if(props.test) {
-        return props.children
-    } else {
-        return false
-    }
-}
+  if (props.test) {
+    return props.children;
+  } else {
+    return false;
+  }
+};
