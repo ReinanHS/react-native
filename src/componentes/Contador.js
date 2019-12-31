@@ -15,7 +15,7 @@ export default class Contador extends Component{
     render(){
         return (
             <View>
-    <Text style={Padrao.ex}>{ this.state.total }</Text>
+                <Text style={Padrao.ex}>{ this.state.total }</Text>
                 <Button onPress={this.maisUm} title="Click Aqui"></Button>
             </View>
         )
