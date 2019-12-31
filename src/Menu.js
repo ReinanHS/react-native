@@ -7,8 +7,12 @@ import ParImpar from './componentes/ParImpar';
 import {MegaSena, Inverter} from './componentes/Multi';
 import Contador from './componentes/Contador';
 import Validator from './componentes/Validator';
+import Evento from './componentes/Evento';
 
 const Navs = createDrawerNavigator({
+  Evento: {
+    screen: () => <Evento />,
+  },
   Validator: {
     screen: () => <Validator ano={2019} />,
   },
